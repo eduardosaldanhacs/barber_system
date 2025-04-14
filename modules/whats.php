@@ -1,0 +1,1 @@
+<a class='blantershow-chat bg-1 text-white' href='https://api.whatsapp.com/send?phone=5551991705377&text=Ol%C3%A1%2C%20estou%20acessando%20atrav%C3%A9s%20do%20site%20da%20Vov%C3%B3%20Olmira%20e%20gostaria%20de%20algumas%20informa%C3%A7%C3%B5es...' target="_blank" title='Show Chat'><i class='fab fa-whatsapp'></i></a>

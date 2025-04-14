@@ -1,0 +1,9 @@
+<?php
+    include('modules/home/sobre.php');
+    include('modules/home/proposta.php');
+    include('modules/home/estrutura.php');
+    include('modules/home/aqui-tem.php');
+    include('modules/home/direitos.php');
+    include('modules/home/brincar.php');
+    include('modules/home/instagram.php');
+?>

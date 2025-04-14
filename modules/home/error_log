@@ -1,0 +1,88 @@
+[12-Dec-2024 17:34:08 UTC] PHP Warning:  Use of undefined constant SITE - assumed 'SITE' (this will throw an Error in a future version of PHP) in /home/vovoolmiracom/public_html/modules/home/instagram.php on line 5
+[12-Dec-2024 17:34:08 UTC] PHP Warning:  Use of undefined constant SITE - assumed 'SITE' (this will throw an Error in a future version of PHP) in /home/vovoolmiracom/public_html/modules/home/instagram.php on line 24
+[12-Dec-2024 17:34:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/vovoolmiracom/public_html/modules/home/instagram.php on line 32
+[12-Dec-2024 17:34:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/vovoolmiracom/public_html/modules/home/instagram.php on line 33
+[12-Dec-2024 17:35:34 UTC] PHP Warning:  Use of undefined constant SITE - assumed 'SITE' (this will throw an Error in a future version of PHP) in /home/vovoolmiracom/public_html/modules/home/instagram.php on line 5
+[12-Dec-2024 17:35:34 UTC] PHP Warning:  Use of undefined constant SITE - assumed 'SITE' (this will throw an Error in a future version of PHP) in /home/vovoolmiracom/public_html/modules/home/instagram.php on line 24
+[12-Dec-2024 17:35:34 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/vovoolmiracom/public_html/modules/home/instagram.php on line 32
+[12-Dec-2024 17:35:34 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/vovoolmiracom/public_html/modules/home/instagram.php on line 33
+[18-Feb-2025 09:43:52 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[18-Feb-2025 09:43:52 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[18-Feb-2025 09:43:52 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[18-Feb-2025 09:43:52 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[18-Feb-2025 09:44:13 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[18-Feb-2025 09:44:13 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[18-Feb-2025 09:44:13 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[18-Feb-2025 09:44:13 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[18-Feb-2025 09:44:20 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[18-Feb-2025 09:44:20 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[18-Feb-2025 09:44:20 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[18-Feb-2025 09:44:20 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[19-Feb-2025 12:04:45 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 12:04:45 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 12:04:45 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 12:04:45 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[19-Feb-2025 12:05:07 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 12:05:07 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 12:05:07 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 12:05:07 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[19-Feb-2025 12:05:15 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 12:05:15 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 12:05:15 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 12:05:15 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[19-Feb-2025 19:55:28 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:55:28 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:55:28 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:55:28 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[19-Feb-2025 19:58:07 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:58:07 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:58:07 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:58:07 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[19-Feb-2025 19:58:31 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:58:31 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:58:31 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:58:31 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[19-Feb-2025 19:58:33 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:58:33 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:58:33 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[19-Feb-2025 19:58:33 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[20-Feb-2025 07:16:57 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 07:16:57 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 07:16:57 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 07:16:57 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[20-Feb-2025 07:16:59 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 07:16:59 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 07:16:59 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 07:16:59 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[20-Feb-2025 07:17:12 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 07:17:12 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 07:17:12 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 07:17:12 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[20-Feb-2025 11:02:01 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 11:02:01 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 11:02:01 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[20-Feb-2025 11:02:01 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[21-Feb-2025 17:40:17 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 17:40:17 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 17:40:17 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 17:40:17 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[21-Feb-2025 17:41:44 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 17:41:44 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 17:41:44 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 17:41:44 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[21-Feb-2025 18:57:06 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 18:57:06 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 18:57:06 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 18:57:06 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[21-Feb-2025 18:57:09 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 18:57:09 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 18:57:09 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 18:57:09 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[21-Feb-2025 19:54:27 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 19:54:27 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 19:54:27 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 19:54:27 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27
+[21-Feb-2025 19:54:29 America/Fortaleza] PHP Warning:  Undefined array key "changes" in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 19:54:29 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 19:54:29 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 26
+[21-Feb-2025 19:54:29 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home2/webdbs73/vovoolmira.com.br/modules/home/webhook.php on line 27

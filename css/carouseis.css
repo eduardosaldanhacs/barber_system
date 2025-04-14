@@ -1,0 +1,57 @@
+.owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.owl-dots .owl-dot {
+    display: inline-block;
+}
+
+.owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+    margin: 5px 7px;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span {
+    display: none;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    width: 30px;
+    height: 30px;
+    margin: -200px 2px 0px 2px;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    z-index: 3 !important;
+    background-position: center !important;
+}
+
+.owl-nav .owl-prev {
+    float: left;
+    margin-left: -4%;
+    background-image: url('../images/slices/left.png') !important;
+}
+
+.owl-nav .owl-next {
+    float: right;
+    margin-right: -4%;
+    background-image: url('../images/slices/right.png') !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff200 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #6732fe !important;
+}

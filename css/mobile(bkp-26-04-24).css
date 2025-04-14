@@ -1,0 +1,91 @@
+
+@media screen and (max-width: 900px) {
+
+a[href^=tel] { color: inherit; text-decoration: none; }
+
+.fancybox-content{
+	width: 95% !important;
+	margin: 0px 2.5% !important;
+}
+
+.fancybox-slide {
+    padding: 20px 0px !important;
+}
+
+header{
+	padding: 5px 0px;
+}
+
+header .navbar-brand {
+    width: 200px;
+    height: 80px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.navbar-toggler{
+	background-color: #fff200 !important;
+    line-height: 1;
+    border-radius: .25rem;
+	margin-bottom: 10px !important;
+}
+
+.menu-fixed .navbar-toggler{
+	margin: 0px auto !important;
+}
+
+.navbar-brand{
+	margin: 0px auto !important;
+}
+
+.navbar-collapse {
+   background: #E5E5E5;
+   opacity: 1;
+   margin-top: 10px;
+}
+
+.nav-link, .dropdown-item{
+	color: #373737 !important;
+	text-shadow: none !important;
+	border: 0px;
+	padding-top: 5px !important;
+}
+
+.link_menu2 {
+    padding-right: 2.1rem !important;
+}
+
+.hamburger {
+	margin: 0px auto;
+}
+
+.hamburger span {
+	display: inline-block;
+	width: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.hamburger:before {
+	content: '\2630';
+	font-size: 1.5em;
+	color: #ffffff;
+}
+
+.dados_topo{
+	text-align: center;
+	width:100%;
+	padding: 5px;
+}
+
+#banners{
+	padding-top: 100px;
+}
+
+.mapa{
+	height: 250px;
+}
+
+}

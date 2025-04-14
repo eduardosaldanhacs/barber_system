@@ -1,0 +1,56 @@
+header .navbar-brand{
+	background-image:url(../images/slices/logo.jpg);
+	width: 242px;
+	height: 108px;
+	margin-top: -30px;
+	margin-bottom: 20px;
+}
+
+header {
+	position: fixed;
+	transition: 0.7s all;
+	z-index: 100;
+}
+
+header.menu-fixed {
+	top: 0;
+	right: 0;
+	width: 100%;
+	padding-top: 0;
+	border-bottom: 1px solid rgba(0,0,0,0.23);
+	z-index: 2;
+}
+
+header.menu-fixed .navbar-brand{
+	display: none !important;
+}
+
+header.menu-fixed .nav-item{
+	border:none;
+}
+
+.link_menu, .dropdown-toggle{
+	color: #ffffff !important;
+	margin: 0px 20px !important;
+	text-align: center !important;
+	transition: 0.4s all;
+	padding-top: .5rem !important;
+	padding-bottom: .5rem !important;
+}
+
+.dropdown-item{
+	color: #7d51a0 !important;
+	text-align: left !important;
+	transition: 0.4s all;
+}
+
+.link_menu:hover, .dropdown-item:hover, .dropdown-toggle:hover{
+	color: #fff200 !important;
+	cursor: pointer;
+}
+
+.sub_menu{
+	display: none;
+	z-index: 6;
+	position:absolute;
+}

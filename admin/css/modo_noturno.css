@@ -1,0 +1,30 @@
+/* CSS Document */
+.modo_noturno{
+	background: #1f2937 !important;
+    color: #fff;
+}
+.modo_noturno .menu_lateral{
+	background: #1f2937 !important;
+    color: #fff;
+}
+.modo_noturno .sombra_modo_noturno{
+	box-shadow: 0px 0px 5px #000 !important;
+}
+.modo_noturno .menu_lateral .nav-link{
+	color: #fff;
+}
+.modo_noturno .fa-tasks{
+	color:#fff;
+}
+.modo_noturno .menu_lateral{
+	box-shadow: 0px 0px 5px #000 !important;
+}
+.modo_noturno .menu_topo{
+	box-shadow: 0px 0px 5px #000 !important;
+}
+.modo_noturno .color_font_black{
+	color: #000;
+}
+.nav-item:hover .nav-link{
+	color: #fff;
+}

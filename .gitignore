@@ -1,0 +1,20 @@
+# Ignorar arquivos de log e backups
+*.log
+# *.sql
+.error_log
+
+# Ignorar arquivos .htaccess "estranhos" (tipo aquele que você mostrou)
+
+
+# Ignorar arquivos de configuração sensíveis
+# define.php
+
+# Ignorar uploads e imagens se não são controlados por Git
+
+
+# Ignorar pastas de dependências (se usar Composer, por exemplo)
+vendor/
+
+# Ignorar caches
+.cache/
+.tmp/
