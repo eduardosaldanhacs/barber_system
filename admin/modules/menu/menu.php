@@ -102,11 +102,37 @@
 
 		<!--SERVIÇOS | FIM  -->
 
-		<li class="nav-item border_menu <?= $_GET['m'] == 'banners' ? 'show' : NULL ?>">
+		
+		<!--EQUIPE  -->
+		<li class="menu-item-has-children nav-item dropdown border_menu <?=$_GET['m'] == 'funcionarios' ? 'show' : NULL ?>">
+			<span class="efeito_preencher"></span>
+			<a class="nav-link dropdown-toggle <?=$_GET['m']=='funcionarios'? 'menu_ativo' : NULL?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<i class="fa fa-user-circle" aria-hidden="true"></i>
+         		<span>Funcionarios</span>
+        	</a>
+			<ul class="sub-menu children dropdown-menu <?=$_GET['m'] == 'funcionarios' ? 'show' : NULL ?>" aria-labelledby="navbarDropdown">
+				<li>
+					<a class="dropdown-item <?=$_GET['m']=='funcionarios' && $_GET['a']=='novo.php'? 'menu_ativo' : NULL?>" href="panel.php?m=funcionarios&a=novo.php">
+						<i class="fa fa-plus-circle" aria-hidden="true"></i>
+						<span>Cadastrar</span>
+					</a>
+				<span class="efeito_preencher_submenu"></span>
+				</li>
+				<li>
+					<a class="dropdown-item <?=$_GET['m']=='funcionarios' && $_GET['a']=='listar.php'? 'menu_ativo' : NULL?>" href="panel.php?m=funcionarios&a=listar.php">
+						<i class="fa fa-list" aria-hidden="true"></i>
+						<span>Listar</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+		<!--EQUIPE | FIM  -->
+
+		<li class="nav-item border_menu <?= $_GET['m'] == 'cardapios' ? 'show' : NULL ?>">
 
 			<span class="efeito_preencher"></span>
 
-			<a class="nav-link <?= $_GET['m'] == 'banners' ? 'menu_ativo' : NULL ?>" href="panel.php?m=banners&a=listar.php">
+			<a class="nav-link <?= $_GET['m'] == 'cardapios' ? 'menu_ativo' : NULL ?>" href="panel.php?m=cardapios&a=listar.php">
 
 				<i class="menu-icon fa fa-file-text-o" aria-hidden="true"></i>
 

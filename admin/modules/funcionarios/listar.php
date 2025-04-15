@@ -1,6 +1,6 @@
 <?php
-	$tabela = "galeria";
-	$pasta  = "galeria";
+	$tabela = "employees";
+	$pasta  = "funcionarios";
 	$filtro = "";
 	if(!empty($_GET['status'])){
 		$filtro.= "AND $tabela.status = '{$_GET['status']}'";
@@ -49,8 +49,8 @@
 			<?php if($dados['status'] != "E"): ?>
 			<li class="list-group-item" id="<?=$dados['id']?>">
 				<div class="row">
-					<div class="col-12 col-xl-4 ">
-						<img src="../images/galerias/<?=$dados['categoria']?>/<?= $dados['imagem'] ?>" alt="" class="zoomable-image" style="width: 150px; height: auto;">
+					<div class="col-12 col-xl-4">
+					<img src="../images/equipe/<?=$dados['categoria']?>/<?= $dados['imagem'] ?>" alt="" class="zoomable-image" style="width: 150px; height: auto;">
 					</div>
 					<div class="col-12 col-xl-4 d-flex align-items-center">
 						<?=$dados['status'] == 'N' ? "Inativo" : "Ativo"?>
@@ -63,7 +63,8 @@
 			</li>
 			<?php 
 			endif;
-		} ?>
+		} 
+		?>
 		</div>
 		<?php
 		}

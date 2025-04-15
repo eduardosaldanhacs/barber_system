@@ -2,10 +2,13 @@
 $tabela = "servicos";
 $pasta  = "servicos";
 $button = "Editar";
-$query = "SELECT * FROM $tabela";
-$resultado = mysqli_query($conn, $query);
-$dados = mysqli_fetch_assoc($resultado);
-$action = "panel.php?m=$pasta&a=cadastrar.php";
+if ($_GET['id']) {
+	$query = "SELECT * FROM $tabela";
+	$resultado = mysqli_query($conn, $query);
+	$dados = mysqli_fetch_assoc($resultado);
+} else {
+	$action = "panel.php?m=$pasta&a=cadastrar.php";
+}
 ?>
 <div class="col-12 form-group">
 	<ul class="list-group">
@@ -24,10 +27,16 @@ $action = "panel.php?m=$pasta&a=cadastrar.php";
 				<textarea name="descricao" id="descricao" class="form-control" placeholder="Descrição do serviço" id=""><?= $dados['description'] ?></textarea>
 			</div>
 			<div class="col-12 form-group">
-				<label for="">Preço</label>
-				<input type="text" name="preco" id="preco" class="form-control" value="<?= $dados['price'] ?>" placeholder="Preço do serviço" required>
+				<label>Preço:</label>
+				<input type="number" step="0.01" min="0" name="preco" id="preco" class="form-control" value="<?= $dados['price'] ?>" placeholder="Preço" required>
 			</div>
-
+			<div class="col-12 form-group">
+				<label for="">Situação</label>
+				<select name="status" id="state" class="form-control" required>
+					<option value="S" <?= $dados['state'] == 'S' ? "selected" : NULL ?>>Publicado</option>
+					<option value="N" <?= $dados['state'] == 'N' ? "selected" : NULL ?>>Oculto</option>
+				</select>
+			</div>
 		</div>
 	</div>
 	<div class="col-12">

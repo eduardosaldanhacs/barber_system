@@ -28,13 +28,13 @@
 			<li class="list-group-item">
 				<div class="row">
 					<div class="col-12 col-xl-3">
-						<?=codificacao($dados['nome'])?>
+						<?=($dados['nome'])?>
 					</div>
 					<div class="col-12 col-xl-3">
-						<?=codificacao($dados['login'])?>
+						<?=($dados['login'])?>
 					</div>
 					<div class="col-12 col-xl-3">
-						<?=!empty($dados['ultimo_login']) ? dateTime2portugues($dados['ultimo_login']) : 'Nenhum Acesso'?>
+						<?=!empty($dados['ultimo_login']) ? ($dados['ultimo_login']) : 'Nenhum Acesso'?>
 					</div>
 					<div class="col-12 col-xl-3 text-center">
 						<a href="panel.php?m=admins&a=novo.php&id=<?=$dados['id']?>" class="btn btn-outline-primary">Editar</a>

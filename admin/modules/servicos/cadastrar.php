@@ -7,7 +7,7 @@ $pasta  = "servicos";
 $name = $_POST['nome'];
 $description = $_POST['descricao'];
 $price = $_POST['preco'];
-$state = $_POST['state'];
+$state = $_POST['status'];
 $date = date('Y-m-d:H:i:s');
 
 //$extensao = pathinfo($imagem1, PATHINFO_EXTENSION);
@@ -20,9 +20,9 @@ if ($stmt === false) {
 $stmt->bind_param("sssss", $name, $description, $price, $state, $date);
 
 if ($stmt->execute()) {
-    alert('Imagem cadastrada com sucesso!', 'panel.php?m=' . $pasta . '&a=listar.php');
+    alert('Serviço cadastrado com sucesso!', 'panel.php?m=' . $pasta . '&a=listar.php');
 } else {
-    alert('Erro ao cadastrar a imagem', 'panel.php?m=' . $pasta . '&a=novo.php');
+    alert('Erro ao cadastrar o serviço', 'panel.php?m=' . $pasta . '&a=novo.php');
 }
 
 $stmt->close();
