@@ -148,6 +148,11 @@ if (empty($_SESSION['NOME']) || empty($_SESSION['ID_ADMIN']) || empty($_SESSION[
 		$('.preco').mask('000.000.000.000.000,00', {
 			reverse: true
 		});
+		$(document).ready(function() {
+			$('#cpf').mask('000.000.000-00');
+			$('#phone').mask('(00) 00000-0000');
+		});
+
 
 		// pegamos o valor no localStorage
 		const nightModeStorage = localStorage.getItem('gmtNightMode')

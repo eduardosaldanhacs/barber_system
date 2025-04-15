@@ -1,7 +1,7 @@
 <?php
-$tabela = "banners";
-$pasta  = "banners";
-$diretorio = "../images/banners/";
+$table = "employees";
+$pasta  = "funcionarios";
+$diretorio = "../images/funcionarios/";
 
 $imagem1 = $_FILES['imagem1']['name'];
 $status = $_POST['status'];
@@ -12,7 +12,7 @@ $extensao = pathinfo($imagem1, PATHINFO_EXTENSION);
 $imagem1 = uniqid('', true) . '.' . $extensao;
 
 
-$stmt = $conn->prepare("INSERT INTO banners (imagem, status, data_cadastro) VALUES (?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO $table (imagem, status, data_cadastro) VALUES (?, ?, ?)");
 
 if ($stmt === false) {
     die("Erro na preparação da query: " . $conn->error);
