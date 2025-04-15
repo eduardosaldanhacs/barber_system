@@ -23,16 +23,16 @@ if (!empty($_GET['id'])) {
 <form method="post" action="<?= $action ?>" enctype="multipart/form-data">
 	<div class="row">
 		<div class="col-12 form-group">
-			<label for="imagem">Imagem</label>
+			<label for="image">Imagem</label>
 			<input type="hidden" name="id" value="<?= $_GET['id'] ?>">
-			<input id="imagem" type="file" name="imagem1" class="form-control-file">
+			<input id="image" type="file" name="image" class="form-control-file">
 		</div>
 		<?php
 		if (!empty($_GET['id'])) {
 		?>
 			<div class="col-12 form-group">
-				<label for="imagem_atual">Imagem Atual:</label>
-				<a target="_blank" href="../images/employees/<?= $dados['imagem'] ?>">Clique aqui para abrir</a>
+				<label for="current_image">Imagem Atual:</label>
+				<a target="_blank" href="../images/funcionarios/<?= $dados['image'] ?>">Clique aqui para abrir</a>
 			</div>
 		<?php
 		}
@@ -65,10 +65,10 @@ if (!empty($_GET['id'])) {
 		</div>
 		
 		<div class="col-4 form-group">
-			<label for="status">Status</label>
-			<select class="custom-select" name="status" id="status">
-				<option <?= !empty($_GET['id']) && $dados['status'] == 'S' ? "selected" : NULL ?> value="S">Ativo</option>
-				<option <?= !empty($_GET['id']) && $dados['status'] == 'N' ? "selected" : NULL ?> value="N">Inativo</option>
+			<label for="state">state</label>
+			<select class="custom-select" name="state" id="state">
+				<option <?= !empty($_GET['id']) && $dados['state'] == 'S' ? "selected" : NULL ?> value="S">Ativo</option>
+				<option <?= !empty($_GET['id']) && $dados['state'] == 'N' ? "selected" : NULL ?> value="N">Inativo</option>
 			</select>
 		</div>
 		<div class="col-12">

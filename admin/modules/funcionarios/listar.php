@@ -2,10 +2,10 @@
 	$tabela = "employees";
 	$pasta  = "funcionarios";
 	$filtro = "";
-	if(!empty($_GET['status'])){
-		$filtro.= "AND $tabela.status = '{$_GET['status']}'";
+	if(!empty($_GET['state'])){
+		$filtro.= "AND $tabela.state = '{$_GET['state']}'";
 	}
-	$query = "SELECT * FROM $tabela WHERE id != 0 $filtro";
+	$query = "SELECT * FROM $tabela WHERE id != 0 AND deleted_at IS NULL $filtro";
     $query = mysqli_query($conn,$query);
 	$qtd_cardapios = mysqli_num_rows($query);
 ?>
@@ -33,10 +33,13 @@
 		<li class="list-group-item">
 			<div class="row">
 				<div class="col-12 col-xl-4">
-					Capa
+					Imagem
 				</div>
-				<div class="col-12 col-xl-4">
-					Status
+				<div class="col-12 col-xl-2">
+					Nome
+				</div>
+				<div class="col-12 col-xl-2">
+					state
 				</div>
 				<div class="col-12 col-xl-4 text-center">
 					Ações
@@ -46,15 +49,19 @@
 		<div id='sortable'>
 		<?php
 		while ($dados=mysqli_fetch_array($query)) { ?>	
-			<?php if($dados['status'] != "E"): ?>
+			<?php if($dados['state'] != "E"): ?>
 			<li class="list-group-item" id="<?=$dados['id']?>">
 				<div class="row">
 					<div class="col-12 col-xl-4">
-					<img src="../images/equipe/<?=$dados['categoria']?>/<?= $dados['imagem'] ?>" alt="" class="zoomable-image" style="width: 150px; height: auto;">
+					<img src="../images/<?= $pasta ?>/<?= $dados['image'] ?>" alt="" class="zoomable-image" style="width: 150px; height: auto;">
 					</div>
-					<div class="col-12 col-xl-4 d-flex align-items-center">
-						<?=$dados['status'] == 'N' ? "Inativo" : "Ativo"?>
+					<div class="col-12 col-xl-2 d-flex align-items-center">
+						<?=$dados['name'] ?>
 					</div>
+					<div class="col-12 col-xl-2 d-flex align-items-center">
+						<?=$dados['state'] == 'N' ? "Inativo" : "Ativo"?>
+					</div>
+
 					<div class="col-12 col-xl-4 text-center d-flex align-items-center justify-content-center">
 						<a href="panel.php?m=<?=$pasta?>&a=novo.php&id=<?=$dados['id']?>" class="btn btn-outline-primary mr-1">Editar</a>
 						<a href="panel.php?m=<?=$pasta?>&a=excluir.php&id=<?=$dados['id']?>" class="btn btn-outline-danger">Excluir</a>
@@ -108,13 +115,13 @@
 	});
 </script>
 <style>
-	/* Estilo base da imagem */
+	/* Estilo base da image */
 .zoomable-image {
     width: 150px;
     height: auto;
     transition: transform 0.3s; 
 }
-/* Estilo da imagem quando ela está ampliada */
+/* Estilo da image quando ela está ampliada */
 .zoomable-image.zoomed {
     transform: scale(2.5); 
     z-index: 1000; 

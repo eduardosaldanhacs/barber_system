@@ -3,33 +3,37 @@ $table = "employees";
 $pasta  = "funcionarios";
 $diretorio = "../images/funcionarios/";
 
-$imagem1 = $_FILES['imagem1']['name'];
-$status = $_POST['status'];
-$data = date('Y-m-d');
+$image = $_FILES['image']['name'];
+$name = $_POST['name'];
+$lastname = $_POST['lastname'];
+$cpf = $_POST['cpf'];
+$phone = $_POST['phone'];
+$age = $_POST['age'];
+$created_at = date('Y-m-d');
 
 // Gerar nome seguro para a imagem
-$extensao = pathinfo($imagem1, PATHINFO_EXTENSION);
-$imagem1 = uniqid('', true) . '.' . $extensao;
+$extensao = pathinfo($image, PATHINFO_EXTENSION);
+$image = uniqid('', true) . '.' . $extensao;
 
 
-$stmt = $conn->prepare("INSERT INTO $table (imagem, status, data_cadastro) VALUES (?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO $table (image, name, lastname, cpf, phone, age, state, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
 if ($stmt === false) {
     die("Erro na preparação da query: " . $conn->error);
 }
 
 // Vincular os valores (s = string)
-$stmt->bind_param("sss", $imagem1, $status, $data);
+$stmt->bind_param("ssssssss", $image, $name, $lastname, $cpf, $phone, $age, $state, $created_at);
 
 // Movendo o arquivo só após preparar a query
 if ($stmt->execute()) {
-    if (move_uploaded_file($_FILES['imagem1']['tmp_name'], $diretorio . $imagem1)) {
-        alert('Imagem cadastrada com sucesso!', 'panel.php?m=' . $pasta . '&a=listar.php');
+    if (move_uploaded_file($_FILES['image']['tmp_name'], $diretorio . $image)) {
+        alert('Cadastro realizado com sucesso!', 'panel.php?m=' . $pasta . '&a=listar.php');
     } else {
-        alert('Erro ao mover a imagem!', 'panel.php?m=' . $pasta . '&a=novo.php');
+        alert('Cadastro realizado, mas deu um erro ao mover a imagem!', 'panel.php?m=' . $pasta . '&a=novo.php');
     }
 } else {
-    alert('Erro ao cadastrar a imagem.', 'panel.php?m=' . $pasta . '&a=novo.php');
+    alert('Erro ao cadastrar o funcionário.', 'panel.php?m=' . $pasta . '&a=novo.php');
 }
 
 $stmt->close();

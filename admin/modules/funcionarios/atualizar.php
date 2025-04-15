@@ -1,16 +1,16 @@
 <?php
-$tabela = "banners";
-$pasta  = "banners";
-$diretorio = "../images/banners/";
+$tabela = "employees";
+$pasta  = "funcionarios";
+$diretorio = "../images/funcionarios/";
 
 $id = $_GET['id'];
 $imagem1 = $_FILES['imagem1']['name'];
-$status = $_POST['status'];
+$deleted_at = date('Y-m-d H:i:s');
 
 if (empty($imagem1)) {
 
     // Se não foi enviada nova imagem, só atualiza o status
-    $stmt = $conn->prepare("UPDATE banners SET status = ? WHERE id = ?");
+    $stmt = $conn->prepare("UPDATE $tabela SET status = ? WHERE id = ?");
     if ($stmt === false) {
         die("Erro na preparação: " . $conn->error);
     }
@@ -37,7 +37,7 @@ if (empty($imagem1)) {
         exit;
     }
 
-    $stmt = $conn->prepare("UPDATE banners SET imagem = ?, status = ?, data_cadastro = ? WHERE id = ?");
+    $stmt = $conn->prepare("UPDATE $tabela SET imagem = ?, status = ?, data_cadastro = ? WHERE id = ?");
     if ($stmt === false) {
         die("Erro na preparação: " . $conn->error);
     }
