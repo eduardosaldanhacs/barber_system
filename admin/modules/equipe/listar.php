@@ -1,11 +1,11 @@
 <?php
-	$tabela = "employees";
-	$pasta  = "funcionarios";
+	$tabela = "team";
+	$pasta  = "equipe";
 	$filtro = "";
 	if(!empty($_GET['status'])){
 		$filtro.= "AND $tabela.status = '{$_GET['status']}'";
 	}
-	$query = "SELECT * FROM $tabela WHERE id != 0 $filtro";
+	$query = "SELECT * FROM $tabela WHERE id != 0 AND deleted_at IS NULL $filtro";
     $query = mysqli_query($conn,$query);
 	$qtd_cardapios = mysqli_num_rows($query);
 ?>

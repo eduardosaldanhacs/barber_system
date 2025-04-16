@@ -1,7 +1,7 @@
 <?php
-$table = "employees";
-$pasta  = "employees";
-$caminho  = "funcionarios";
+$table = "team";
+$pasta  = "team";
+$caminho  = "equipe";
 if (!empty($_GET['id'])) {
 	$id = $_GET['id'];
 	$query = "SELECT * FROM $table WHERE id = {$_GET['id']}";
@@ -25,14 +25,14 @@ if (!empty($_GET['id'])) {
 		<div class="col-12 form-group">
 			<label for="imagem">Imagem</label>
 			<input type="hidden" name="id" value="<?= $_GET['id'] ?>">
-			<input id="imagem" type="file" name="imagem1" class="form-control-file">
+			<input id="imagem" type="file" name="image" class="form-control-file">
 		</div>
 		<?php
 		if (!empty($_GET['id'])) {
 		?>
 			<div class="col-12 form-group">
 				<label for="imagem_atual">Imagem Atual:</label>
-				<a target="_blank" href="../images/employees/<?= $dados['imagem'] ?>">Clique aqui para abrir</a>
+				<a target="_blank" href="../images/team/<?= $dados['image'] ?>">Clique aqui para abrir</a>
 			</div>
 		<?php
 		}
