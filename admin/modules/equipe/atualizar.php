@@ -1,57 +1,71 @@
 <?php
-$tabela = "banners";
-$pasta  = "banners";
-$diretorio = "../images/banners/";
+$table = "team";
+$folder = "equipe";
+$path = "../images/equipe/";
 
-$id = $_GET['id'];
-$imagem1 = $_FILES['imagem1']['name'];
-$status = $_POST['status'];
+$id = $_POST['id'];  // <- ID do registro a ser atualizado
+$name = $_POST['name'];
+$lastname = $_POST['lastname'];
+$cpf = $_POST['cpf'];
+$age = $_POST['age'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$description = $_POST['description'];
+$state = $_POST['state'];
+$updated_at = date('Y-m-d:H:i:s');
 
-if (empty($imagem1)) {
+$image = $_FILES['image']['name'];
 
-    // Se não foi enviada nova imagem, só atualiza o status
-    $stmt = $conn->prepare("UPDATE banners SET status = ? WHERE id = ?");
-    if ($stmt === false) {
-        die("Erro na preparação: " . $conn->error);
-    }
+if (!empty($id)) {
+    // Se uma nova imagem for enviada
+    if (!empty($image)) {
+        $extensao = pathinfo($image, PATHINFO_EXTENSION);
+        $image = uniqid('', true) . '.' . $extensao;
 
-    $stmt->bind_param("si", $status, $id);
+        $stmt = $conn->prepare("UPDATE $table SET 
+        name = ?, lastname = ?, cpf = ?, age = ?, phone = ?, email = ?, description = ?, image = ?, state = ?, updated_at = ? 
+        WHERE id = ?");
 
-    if ($stmt->execute()) {
-        alert('Imagem atualizada com sucesso!', 'panel.php?m=' . $pasta . '&a=listar.php');
+        if ($stmt === false) {
+            die("Erro na preparação da query: " . $conn->error);
+        }
+
+        $stmt->bind_param("ssssssssssi", $name, $lastname, $cpf, $age, $phone, $email, $description, $image, $state, $updated_at, $id);
+
+        if ($stmt->execute()) {
+            if (move_uploaded_file($_FILES['image']['tmp_name'], $path . $image)) {
+                alert('Dados e imagem atualizados com sucesso!', 'panel.php?m=' . $folder . '&a=listar.php');
+            } else {
+                alert('Erro ao mover a nova imagem!', 'panel.php?m=' . $folder . '&a=editar.php&id=' . $id);
+            }
+        } else {
+            alert('Erro ao atualizar o registro.', 'panel.php?m=' . $folder . '&a=editar.php&id=' . $id);
+        }
+
+        $stmt->close();
     } else {
-        alert('Erro ao atualizar a imagem', 'panel.php?m=' . $pasta . '&a=novo.php');
+        // Caso não tenha nova imagem, mantém a atual
+        $stmt = $conn->prepare("UPDATE $table SET 
+        name = ?, lastname = ?, cpf = ?, age = ?, phone = ?, email = ?, description = ?, state = ?, updated_at = ?
+        WHERE id = ?");
+
+        if ($stmt === false) {
+            die("Erro na preparação da query: " . $conn->error);
+        }
+
+        $stmt->bind_param("ssssssssssi", $name, $lastname, $cpf, $age, $phone, $email, $description, $state, $updated_at, $id);
+
+        if ($stmt->execute()) {
+            alert('Dados atualizados com sucesso!', 'panel.php?m=' . $folder . '&a=listar.php');
+        } else {
+            alert('Erro ao atualizar o registro.', 'panel.php?m=' . $folder . '&a=editar.php&id=' . $id);
+        }
+
+        $stmt->close();
     }
-
-    $stmt->close();
-
 } else {
-
-    $data = date('Y-m-d');
-
-    $extensao = pathinfo($imagem1, PATHINFO_EXTENSION);
-    $imagem1 = uniqid('', true) . '.' . $extensao;
-
-    if (!move_uploaded_file($_FILES['imagem1']['tmp_name'], $diretorio . $imagem1)) {
-        alert('Erro ao mover a imagem!', 'panel.php?m=' . $pasta . '&a=novo.php');
-        exit;
-    }
-
-    $stmt = $conn->prepare("UPDATE banners SET imagem = ?, status = ?, data_cadastro = ? WHERE id = ?");
-    if ($stmt === false) {
-        die("Erro na preparação: " . $conn->error);
-    }
-
-    $stmt->bind_param("sssi", $imagem1, $status, $data, $id);
-
-    if ($stmt->execute()) {
-        alert('Imagem atualizada com sucesso!', 'panel.php?m=' . $pasta . '&a=listar.php');
-    } else {
-        alert('Erro ao atualizar a imagem', 'panel.php?m=' . $pasta . '&a=novo.php');
-    }
-
-    $stmt->close();
+    alert('ID inválido.', 'panel.php?m=' . $folder . '&a=novo.php');
+    exit;
 }
 
 $conn->close();
-?>

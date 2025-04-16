@@ -38,14 +38,14 @@
 		echo $ordena;
 		mysqli_query($conn,$ordena);
 	 }
-	function status(){
+	function state(){
 	?>
-		<label for="status">Status</label>
+		<label for="state">Status</label>
 		<input type="hidden" name="turma" value="<?=$_SESSION['turma']?>">
-		<select id="status" class="custom-select" name="status">
-			<option <?=empty($_GET['status']) ? "selected" : NULL?> value="">Ativo/Inativo</option>
-			<option <?=!empty($_GET['status']) && $_GET['status'] == 'S' ? "selected" : NULL?> value="S">Ativo</option>
-			<option <?=!empty($_GET['status']) && $_GET['status'] == 'N' ? "selected" : NULL?> value="N">Inativo</option>
+		<select id="state" class="custom-select" name="state">
+			<option <?=empty($_GET['state']) ? "selected" : NULL?> value="">Ativo/Inativo</option>
+			<option <?=!empty($_GET['state']) && $_GET['state'] == 'S' ? "selected" : NULL?> value="S">Ativo</option>
+			<option <?=!empty($_GET['state']) && $_GET['state'] == 'N' ? "selected" : NULL?> value="N">Inativo</option>
 		</select>
 	<?php
 	}

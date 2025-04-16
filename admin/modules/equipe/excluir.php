@@ -15,9 +15,9 @@ if (!empty($_GET['id'])) {
     $stmt->bind_param("si", $deleted_at, $id);
 
     if ($stmt->execute()) {
-        alert('Imagem excluida com sucesso!', 'panel.php?m=' . $path . '&a=listar.php');
+        alert('Funcionário excluido com sucesso!', 'panel.php?m=' . $path . '&a=listar.php');
     } else {
-        alert('Erro ao excluir a imagem', 'panel.php?m=' . $path . '&a=novo.php');
+        alert('Erro ao excluir o funcinario!', 'panel.php?m=' . $path . '&a=novo.php');
     }
     $stmt->close();
 } else {

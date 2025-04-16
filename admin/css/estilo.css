@@ -146,6 +146,10 @@
   }
 /*Button*/
 
+p {
+	margin: 0px !important;
+}
+
 @media screen and (max-width:767px) {
 
 	.menu_lateral{

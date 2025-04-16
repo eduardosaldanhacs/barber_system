@@ -32,7 +32,7 @@ if (!empty($_GET['id'])) {
 		?>
 			<div class="col-12 form-group">
 				<label for="imagem_atual">Imagem Atual:</label>
-				<a target="_blank" href="../images/team/<?= $dados['image'] ?>">Clique aqui para abrir</a>
+				<a target="_blank" href="<?= SITE ?>images/equipe/<?= $dados['image'] ?>">Clique aqui para abrir</a>
 			</div>
 		<?php
 		}
@@ -46,15 +46,21 @@ if (!empty($_GET['id'])) {
 			<input type="text" name="lastname" id="lastname" class="form-control" value="<?= $dados['lastname'] ? $dados['lastname'] : NULL ?>" placeholder="Sobrenome" required maxlength="100">
 		</div>
 
-		<div class="col-6 form-group">
+		<div class="col-3 form-group">
 			<label for="cpf">CPF</label>
-			<input type="text" name="cpf" id="cpf" class="form-control" value="<?= $dados['cpf'] ?>" placeholder="Preencha o telefone" required>
+			<input type="text" name="cpf" id="cpf" class="form-control" value="<?= $dados['cpf'] ?>" placeholder="Preencha o cpf" required>
 		</div>
+		
+		<div class="col-4 form-group">
+			<label for="email">Email</label>
+			<input type="text" name="email" id="email" class="form-control" value="<?= $dados['email'] ?>" placeholder="Preencha o email" required>
+		</div>
+		
 		<div class="col-2 form-group">
 			<label for="age">Idade</label>
 			<input type="text" name="age" id="age" class="form-control" value="<?= $dados['age'] ?>" placeholder="Idade" required min="0" max="99" maxlength="2">
 		</div>
-		<div class="col-4 form-group">
+		<div class="col-3 form-group">
 			<label for="phone">Telefone</label>
 			<input type="text" name="phone" id="phone" class="form-control" value="<?= $dados['phone'] ?>" placeholder="Telefone" required>
 		</div>
@@ -66,12 +72,13 @@ if (!empty($_GET['id'])) {
 		
 		<div class="col-4 form-group">
 			<label for="status">Status</label>
-			<select class="custom-select" name="status" id="status">
-				<option <?= !empty($_GET['id']) && $dados['status'] == 'S' ? "selected" : NULL ?> value="S">Ativo</option>
-				<option <?= !empty($_GET['id']) && $dados['status'] == 'N' ? "selected" : NULL ?> value="N">Inativo</option>
+			<select class="custom-select" name="state" id="status">
+				<option <?= !empty($_GET['id']) && $dados['state'] == 'S' ? "selected" : NULL ?> value="S">Ativo</option>
+				<option <?= !empty($_GET['id']) && $dados['state'] == 'N' ? "selected" : NULL ?> value="N">Inativo</option>
 			</select>
 		</div>
 		<div class="col-12">
+			<input type="hidden" name="id" value="<?= $_GET['id'] ? $_GET['id'] : NULL ?>">
 			<button type="submit" class="btn btn-primary w-100"><?= $button ?></button>
 		</div>
 	</div>

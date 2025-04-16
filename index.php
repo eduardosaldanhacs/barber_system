@@ -54,28 +54,23 @@
                 <span class="block mt-4 text-yellow-400 font-bold"><?= formatToReal($service_item['price']) ?></span>
             </div>
         <?php } ?>
-            <!-- <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
-            <h3 class="text-xl font-semibold mb-2">Corte Masculino</h3>
-            <p>Do clássico ao moderno, com acabamento impecável.</p>
-            <span class="block mt-4 text-yellow-400 font-bold">R$ 35,00</span>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
-            <h3 class="text-xl font-semibold mb-2">Barba</h3>
-            <p>Hidratação, alinhamento e estilo para sua barba.</p>
-            <span class="block mt-4 text-yellow-400 font-bold">R$ 25,00</span>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
-            <h3 class="text-xl font-semibold mb-2">Combo Corte + Barba</h3>
-            <p>Pacote completo para sair no estilo!</p>
-            <span class="block mt-4 text-yellow-400 font-bold">R$ 55,00</span>
-        </div> -->
         </div>
     </section>
 
     <section id="equipe" class="py-20 bg-gray-800 text-center">
         <h2 class="text-3xl font-bold mb-10">Nossa Equipe</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <?php 
+                $team_query = "SELECT * FROM team WHERE state = 'S' AND deleted_at IS NULL";
+                $team_result = mysqli_query($conn, $team_query);
+            while($team_member = mysqli_fetch_assoc($team_result)) { ?>
             <div>
+                <img src="images/equipe/<?= $team_member['image'] ?>" class="mx-auto rounded-full mb-4" style="height: 350px; width:250px;" alt="<?= $team_member['name'] ?>">
+                <h3 class="font-semibold"><?= $team_member['name'] ?> <?= $team_member['lastname'] ?></h3>
+                <p><?= $team_member['description'] ?>.</p>
+            </div>
+            <? } ?>
+            <!-- <div>
                 <img src="images/barber1.jpg" class="mx-auto rounded-full mb-4" style="height: 350px; width:250px;" alt="Barbeiro 1">
                 <h3 class="font-semibold">Lucas Ferreira</h3>
                 <p>Especialista em cortes modernos</p>
@@ -89,7 +84,7 @@
                 <img src="images/barber3.jpg" class="mx-auto rounded-full mb-4" style="height: 350px; width:250px;" alt="Barbeiro 3">
                 <h3 class="font-semibold">Rafael Costa</h3>
                 <p>Acabamento e design capilar</p>
-            </div>
+            </div> -->
         </div>
     </section>
 
