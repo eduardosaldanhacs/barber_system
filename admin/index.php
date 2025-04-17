@@ -1,5 +1,5 @@
 <?php
-session_name('sistema_barbearia');
+session_name('barber_system');
 session_start();
 
 include('includes/functions.php');
@@ -31,10 +31,45 @@ if (!empty($_SESSION['COD'])) {
 	<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilo.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/modo_noturno.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<script src="https://kit.fontawesome.com/156d6a1fcd.js" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/jquery/jquery.js"></script>
+	<!--        <script src="js/menu.js"></script>-->
+
+	<!---------------------------------ALERT SPECIAL--------------------------------------->
+	<script type="text/javascript" src="js/alertify/alertify.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/alertify/css/alertify.css">
+	<link rel="stylesheet" type="text/css" href="js/alertify/css/themes/default.min.css">
+	<!---------------------------------ALERT SPECIAL--------------------------------------->
+
+	<!-----------------------------------CKEDITOR------------------------------------------>
+	<script src="//cdn.ckeditor.com/4.16.0/full/ckeditor.js"></script>
+	<!-----------------------------------CKEDITOR------------------------------------------>
+
+	<!--        <script type="text/javascript" src="js/jquery.mask.min.js"></script>-->
+
+	<script type="text/javascript" src="js/functions.js"></script>
+
+	<!--		<script src="js/jquery.numeric.js"></script>-->
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="js/ajax.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+	<!--  Sortable -->
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body class="bg-yellow-400 flex items-center justify-center min-h-screen">
@@ -45,13 +80,13 @@ if (!empty($_SESSION['COD'])) {
 
 		<div class="mb-4">
 			<label for="login" class="block text-gray-700 text-sm font-bold mb-2">Login</label>
-			<input type="text" name="login" id="login" placeholder="Login"
+			<input type="text" name="login" id="login" value="admin"
 				class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-400">
 		</div>
 
 		<div class="mb-6">
 			<label for="senha" class="block text-gray-700 text-sm font-bold mb-2">Senha</label>
-			<input type="password" name="senha" id="senha" placeholder="Senha"
+			<input type="password" name="senha" id="senha" value="admin123"
 				class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-400">
 		</div>
 

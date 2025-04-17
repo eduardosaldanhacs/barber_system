@@ -6,7 +6,7 @@ $filter = "";
 if (!empty($_GET['state'])) {
 	$filter .= "AND $table.state = '{$_GET['state']}'";
 }
-$query = "SELECT * FROM $table WHERE id != 0 AND deleted_at IS NULL $filter";
+$query = "SELECT * FROM $table WHERE id != 0 AND deleted_at IS NULL $filter ORDER by ordem ASC";
 $query = mysqli_query($conn, $query);
 $qtd_cardapios = mysqli_num_rows($query);
 ?>
@@ -67,8 +67,8 @@ $qtd_cardapios = mysqli_num_rows($query);
 									<?= $dados['state'] == 'N' ? "Inativo" : "Ativo" ?>
 								</div>
 								<div class="col-12 col-xl-3 text-center d-flex align-items-center justify-content-center">
-									<a href="panel.php?m=<?= $path ?>&a=novo.php&id=<?= $dados['id'] ?>" class="btn btn-outline-primary mr-1">Editar</a>
-									<a href="panel.php?m=<?= $path ?>&a=excluir.php&id=<?= $dados['id'] ?>" class="btn btn-outline-danger">Excluir</a>
+									<a href="panel.php?m=<?= $path ?>&a=novo.php&id=<?= $dados['id'] ?>" class="btn btn-info mr-1">Editar</a>
+									<a href="panel.php?m=<?= $path ?>&a=excluir.php&id=<?= $dados['id'] ?>" class="btn btn-danger">Excluir</a>
 								</div>
 							</div>
 						</li>
@@ -94,7 +94,7 @@ $qtd_cardapios = mysqli_num_rows($query);
 		update: function() {
 			var lista = $('#sortable').sortable('toArray');
 			$.post("<?= SITE ?>admin/modules/<?= $folder ?>/ordenar.php", {
-				cardapios: lista
+				equipe: lista
 			}, function() {
 				//			alert('Sucesso');
 			});

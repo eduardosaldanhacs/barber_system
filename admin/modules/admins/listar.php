@@ -37,7 +37,7 @@
 						<?=!empty($dados['ultimo_login']) ? ($dados['ultimo_login']) : 'Nenhum Acesso'?>
 					</div>
 					<div class="col-12 col-xl-3 text-center">
-						<a href="panel.php?m=admins&a=novo.php&id=<?=$dados['id']?>" class="btn btn-outline-primary">Editar</a>
+						<a href="panel.php?m=admins&a=novo.php&id=<?=$dados['id']?>" class="btn btn-info">Editar</a>
 						<?php
 							if($_SESSION['ID_ADMIN']==$dados['id'])	{
 						?>
@@ -47,7 +47,7 @@
 							else
 							{
 						?>
-							<button onclick="excluir('admins','excluir.php','<?=$dados['id']?>')" class="btn btn-outline-primary">Excluir</button>					
+							<button onclick="excluir('admins','excluir.php','<?=$dados['id']?>')" class="btn btn-danger">Excluir</button>					
 						<?php
 							}
 						?>

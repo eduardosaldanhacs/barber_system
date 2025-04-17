@@ -21,12 +21,10 @@
 	<div class="col-12 form-group">
 		<label for="nome">Nome</label>
 		<input maxlength="255" id="nome" required class="form-control" type="text" name="nome" value="<?=!empty($_GET['id']) ?$dados['nome'] : NULL?>">
-		<?=caracteres($dados,"nome",255);?>
 	</div>
    <div class="col-12 form-group">
    		<label for="login">Login</label>
    		<input maxlength="255" id="login" required class="form-control" type="text" name="usuario" value="<?=!empty($_GET['id']) ?$dados['login'] : NULL?>">
-   		<?=caracteres($dados,"login",255);?>
    </div> 
    <?php
    		if(!empty($_GET['id'])){
@@ -57,6 +55,6 @@
 	</div> 
 	<div class="col-12 form-group">
 		<input type="hidden" name="id" value="<?=isset($dados['id']) ? $dados['id'] : '' ?>">
-		<input class="btn btn-primary w-100" type="submit" value="<?=$button?>">
+		<input class="btn btn-success w-100" type="submit" value="<?=$button?>">
 	</div>
 </form>

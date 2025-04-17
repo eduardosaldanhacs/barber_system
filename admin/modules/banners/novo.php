@@ -46,7 +46,7 @@
 			</select>
 		</div>	
 		<div class="col-12">
-			<button type="submit" class="btn btn-primary w-100"><?=$button?></button>
+			<button type="submit" class="btn btn-success w-100"><?=$button?></button>
 		</div>
 	</div>
 </form>

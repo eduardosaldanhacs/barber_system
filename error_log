@@ -1,0 +1,16 @@
+[17-Apr-2025 08:58:03 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php:8
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'testeadm')
+#1 /home1/edu81877/public_html/barbearia_estilo/index.php(1): include('/home1/edu81877...')
+#2 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php on line 8
+[17-Apr-2025 09:17:59 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'edu81877_controle_financeiro.banners' doesn't exist in /home1/edu81877/public_html/barbearia_estilo/index.php:35
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/index.php(35): mysqli_query(Object(mysqli), 'SELECT * FROM b...')
+#1 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/index.php on line 35
+[17-Apr-2025 09:18:29 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'edu81877_controle_financeiro.banners' doesn't exist in /home1/edu81877/public_html/barbearia_estilo/index.php:35
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/index.php(35): mysqli_query(Object(mysqli), 'SELECT * FROM b...')
+#1 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/index.php on line 35

@@ -1,6 +1,6 @@
 <?php
 
-	session_name('sistema_vovo_olmira');
+	session_name('barber_system');
 	session_start();
 
 	include('../../includes/functions.php');

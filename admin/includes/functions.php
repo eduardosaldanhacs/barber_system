@@ -132,5 +132,21 @@
 		return 'R$ ' . number_format($price, 2, ',', '.');
 	}
 
+	function formatDateBr($data) {
+		if ($data) {
+			return date('d/m/Y', strtotime($data));
+		}
+		return null;
+	}
+
+	function formatHour($hora) {
+		if ($hora) {
+			return date('H:i', strtotime($hora));
+		}
+		return null;
+	}
+	
+	
+
 
 ?>	

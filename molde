@@ -1,0 +1,9 @@
+<header>        → Logo, menu (Home, Serviços, Equipe, Agendamento, Contato)
+
+<section id="home">         → Banner principal + chamada para ação ("Agende seu horário")
+<section id="servicos">     → Lista de serviços com preços
+<section id="equipe">       → Fotos + nomes dos barbeiros
+<section id="agendamento">  → Formulário para cliente marcar horário
+<section id="contato">      → Endereço, telefone, WhatsApp, Google Maps
+
+<footer>        → Copyright, links extras.

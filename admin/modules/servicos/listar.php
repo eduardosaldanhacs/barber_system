@@ -2,10 +2,10 @@
 $tabela = "servicos";
 $pasta  = "servicos";
 $filtro = "";
-if (!empty($_GET['status'])) {
-	$filtro .= "AND $tabela.status = '{$_GET['status']}'";
+if (!empty($_GET['state'])) {
+	$filtro .= "AND $tabela.state = '{$_GET['state']}'";
 }
-$query = "SELECT * FROM $tabela";
+$query = "SELECT * FROM $tabela WHERE deleted_at IS NULL";
 $resultado = mysqli_query($conn, $query);
 ?>
 
@@ -17,7 +17,7 @@ $resultado = mysqli_query($conn, $query);
 				<input type="hidden" name="m" value="<?= $pasta ?>">
 				<input type="hidden" name="a" value="listar.php">
 				<div class="col-12 col-xl-9">
-					<?= status(); ?>
+					<?= state(); ?>
 				</div>
 				<div class="col-3 col-xl-2 text-center margin_label">
 					<input class="btn btn-primary w-100" type="submit" value="Buscar" />
@@ -57,7 +57,8 @@ $resultado = mysqli_query($conn, $query);
 							<?= $dados['price'] ?>
 						</div>
 						<div class="col-12 col-xl-3 text-center d-flex align-items-center justify-content-center">
-							<a href="panel.php?m=<?= $pasta ?>&a=novo.php" class="btn btn-outline-primary mr-1">Editar</a>
+							<a href="panel.php?m=<?= $pasta ?>&a=novo.php" class="btn btn-info mr-1">Editar</a>
+							<a href="panel.php?m=<?= $pasta ?>&a=excluir.php&id=<?= $dados['id'] ?>" class="btn btn-danger">Excluir</a>
 						</div>
 					</div>
 				</li>
@@ -65,15 +66,3 @@ $resultado = mysqli_query($conn, $query);
 		<?php } ?>
 	</ul>
 </div>
-<script>
-	$("#sortable").sortable({
-		update: function() {
-			var lista = $('#sortable').sortable('toArray');
-			$.post("<?= SITE ?>admin/modules/<?= $pasta ?>/ordenar.php", {
-				cardapios: lista
-			}, function() {
-				//			alert('Sucesso');
-			});
-		}
-	});
-</script>

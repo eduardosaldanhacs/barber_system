@@ -3,12 +3,12 @@
 	font-family: 'Lato', sans-serif;
 }
 
-
 .menu_topo {
 	display: table !important;
 	width: 100%;
 	box-shadow: 0px 5px 5px -5px #ccc;
 }
+
 .menu_lateral {
 	display: table;
 	position: fixed !important;
@@ -21,22 +21,27 @@
 	z-index: 3;
 	overflow: auto;
 }
-.menu_lateral nav{
+
+.menu_lateral nav {
 	overflow: auto;
 	height: 100%;
 	align-items: baseline;
 }
+
 .flex_direction {
 	flex-direction: column !important;
 }
+
 .dropdown-menu {
 	position: static !important;
 	margin-bottom: 5px !important;
 }
+
 #corpo {
 	width: calc(100% - 250px);
 	margin-left: 250px;
 }
+
 .border_menu {
 	display: table;
 	width: 100%;
@@ -47,58 +52,71 @@
 .border_menu a {
 	color: #1f2937;
 }
+
 .menu_ativo {
-	background: #fbbf24 !important;
+	background: oklch(79.5% 0.184 86.047) !important;
 	color: #fff !important;
 }
+
+.bg-yellow {
+	background: oklch(79.5% 0.184 86.047) !important;
+}
+
 .row {
 	margin-right: 0px !important;
 	margin-left: 0px !important;
 }
+
 .listagem_box {
 	box-shadow: 0px 0px 5px #eee;
 	padding-bottom: 10px;
 	margin-bottom: 20px;
 }
+
 .container-fluid {
 	margin: 20px 0px;
 }
+
 #fechar_menu {
 	display: none;
 }
-.navbar-expand-lg .navbar-nav .nav-link{
+
+.navbar-expand-lg .navbar-nav .nav-link {
 	padding-right: .5rem;
-    padding-left: .5rem;
+	padding-left: .5rem;
 }
-.btn{
-	white-space: normal!important;
+
+.btn {
+	white-space: normal !important;
 }
 
 /*Button*/
-.button_modo_noturno{
+.button_modo_noturno {
 	display: table;
 	float: left;
 }
-.titulo_modo_noturno{
+
+.titulo_modo_noturno {
 	display: table;
 	float: left;
 	margin: 5px 0px 0px 10px;
 }
+
 .switch {
 	position: relative;
 	display: inline-block;
 	width: 60px;
 	height: 34px;
 	float: left;
-  }
-  
-  .switch input { 
+}
+
+.switch input {
 	opacity: 0;
 	width: 0;
 	height: 0;
-  }
-  
-  .slider {
+}
+
+.slider {
 	position: absolute;
 	cursor: pointer;
 	top: 0;
@@ -108,9 +126,9 @@
 	background-color: #ccc;
 	-webkit-transition: .4s;
 	transition: .4s;
-	}
-  
-  .slider:before {
+}
+
+.slider:before {
 	position: absolute;
 	content: "";
 	height: 26px;
@@ -120,30 +138,31 @@
 	background-color: white;
 	-webkit-transition: .4s;
 	transition: .4s;
-  }
-  
-  input:checked + .slider {
-	background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-	box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider {
+	background-color: oklch(79.5% 0.184 86.047);
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px oklch(79.5% 0.184 86.047);
+}
+
+input:checked+.slider:before {
 	-webkit-transform: translateX(26px);
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+.slider.round {
 	border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
 	border-radius: 50%;
-  }
+}
+
 /*Button*/
 
 p {
@@ -152,39 +171,46 @@ p {
 
 @media screen and (max-width:767px) {
 
-	.menu_lateral{
+	.menu_lateral {
 		margin-left: -250px;
 	}
-.open .menu_lateral{
-	margin-left: 0px;
-}
-	.open{
+
+	.open .menu_lateral {
+		margin-left: 0px;
+	}
+
+	.open {
 		overflow-x: hidden;
 	}
-	.open #corpo{
+
+	.open #corpo {
 		min-width: 700px;
 	}
-#corpo {
-	width: 100%;
-	margin-left: 0px;
-}
-.menu_mobile {
-	position: absolute;
-	top: 15px;
-	left: 20px;
-	display: table;
-	width: 45px;
-	z-index: 9999;
-	transition-duration: .5s;
-	cursor: pointer;
-}
-.menu_mobile div {
-	width: 100%;
-	height: 6px;
-	margin-bottom: 5px;
-	background: #fbbf24;
-}
-/*
+
+	#corpo {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.menu_mobile {
+		position: absolute;
+		top: 15px;
+		left: 20px;
+		display: table;
+		width: 45px;
+		z-index: 9999;
+		transition-duration: .5s;
+		cursor: pointer;
+	}
+
+	.menu_mobile div {
+		width: 100%;
+		height: 6px;
+		margin-bottom: 5px;
+		background: oklch(79.5% 0.184 86.047);
+	}
+
+	/*
 #fechar_menu {
 	display: block;
 	position: absolute;
@@ -192,40 +218,48 @@ p {
 	left: 210px;
 	font-size: 33px;
 	z-index: 4;
-	color: #fbbf24;
+	color: oklch(79.5% 0.184 86.047);
 	cursor: pointer;
 }
 */
-.navbar_mobile{
-	padding: 45px 1rem !important;
-}
-.button_modo_noturno{
-	margin-left: 0px;
-    margin-top: 2px;
-}
-.switch{
-	width: 37px;
-}
-.slider:before{
-	left: 6px;
-}
- input:checked + .slider:before {
-	-webkit-transform: translateX(0px);
-	-ms-transform: translateX(0px);
-	transform: translateX(0px);
-  }
-	.open .menu_topo .button_modo_noturno{
+	.navbar_mobile {
+		padding: 45px 1rem !important;
+	}
+
+	.button_modo_noturno {
+		margin-left: 0px;
+		margin-top: 2px;
+	}
+
+	.switch {
+		width: 37px;
+	}
+
+	.slider:before {
+		left: 6px;
+	}
+
+	input:checked+.slider:before {
+		-webkit-transform: translateX(0px);
+		-ms-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+
+	.open .menu_topo .button_modo_noturno {
 		display: none;
 	}
-	.open .menu_topo div a{
+
+	.open .menu_topo div a {
 		display: none;
 	}
-	
+
 }
-.margin_label{
+
+.margin_label {
 	margin-top: 31px;
 }
-.caracteres_permitidos{
+
+.caracteres_permitidos {
 	position: absolute;
 	top: 0px;
 	right: 15px;
@@ -235,29 +269,33 @@ p {
 	background: blueviolet;
 	color: #fff;
 }
-.menu_lateral li .efeito_preencher{
+
+.menu_lateral li .efeito_preencher {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	transition: 0.5s;
-	background: #fbbf24;
+	background: oklch(79.5% 0.184 86.047);
 	width: 0px;
 	height: 40px;
 	z-index: -1;
 }
-.menu_lateral li:hover > .efeito_preencher{
+
+.menu_lateral li:hover>.efeito_preencher {
 	width: 100%;
 }
-.efeito_preencher_submenu{
+
+.efeito_preencher_submenu {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	transition: 0.5s;
-	background: #fbbf24;
+	background: oklch(79.5% 0.184 86.047);
 	width: 0px;
 	height: 32px;
 	z-index: -1;
 }
+
 /*
 .menu_lateral .sub-menu li:hover > .efeito_preencher_submenu{
 	width: 100%;
@@ -266,3 +304,9 @@ p {
 	display: table;
 	position: relative;
 }*/
+
+.list-group-item.active {
+	background-color: oklch(79.5% 0.184 86.047) !important; /* cor de fundo */
+	color: #ffffff;            /* cor do texto */
+	border-color: oklch(79.5% 0.184 86.047) !important;     /* cor da borda, se quiser */
+  }

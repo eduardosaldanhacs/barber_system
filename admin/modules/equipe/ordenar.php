@@ -1,6 +1,6 @@
 <?php
 
-	session_name('sistema_vovo_olmira');
+	session_name('barber_system');
 	session_start();
 
 	include('../../includes/functions.php');
@@ -11,14 +11,14 @@
 
 	include('../../includes/connect.php');
 
-	$pasta  = "banners";
-	$tabela = "banners";
+	$pasta  = "team";
+	$tabela = "team";
 
-	$cardapios = $_POST['cardapios'];
+	$equipe = $_POST['id'];
 	$pos       = 0;
 	
-	foreach($cardapios as $cardapio){
-		$ordena = "UPDATE $tabela set ordem = '$pos' where id = '$cardapio'";
+	foreach($equipe as $funcionario){
+		echo $ordena = "UPDATE $tabela set ordem = '$pos' where id = '$funcionario'";
 		mysqli_query($conn,$ordena);
 		$pos++;
 	}

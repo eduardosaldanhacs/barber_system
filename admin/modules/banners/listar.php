@@ -45,7 +45,7 @@
 
 				<div class="col-12 col-xl-9">
 
-					<?=status();?>
+					<?=state();?>
 
 				</div>
 
@@ -113,8 +113,8 @@
 					</div>
 
 					<div class="col-12 col-xl-4 text-center d-flex align-items-center justify-content-center">
-						<a href="panel.php?m=<?=$pasta?>&a=novo.php&id=<?=$dados['id']?>" class="btn btn-outline-primary mr-1">Editar</a>
-						<a href="panel.php?m=<?=$pasta?>&a=excluir.php&id=<?=$dados['id']?>" class="btn btn-outline-danger">Excluir</a>
+						<a href="panel.php?m=<?=$pasta?>&a=novo.php&id=<?=$dados['id']?>" class="btn btn-info mr-1">Editar</a>
+						<!-- <a href="panel.php?m=<?=$pasta?>&a=excluir.php&id=<?=$dados['id']?>" class="btn btn-danger">Excluir</a> -->
 					</div>
 				</div>
 

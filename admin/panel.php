@@ -1,5 +1,5 @@
 <?php
-session_name('sistema_vovo_olmira');
+session_name('barber_system');
 session_start();
 
 include('includes/functions.php');
@@ -43,7 +43,7 @@ if (empty($_SESSION['NOME']) || empty($_SESSION['ID_ADMIN']) || empty($_SESSION[
 	<link rel="stylesheet" href="css/modo_noturno.css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
-
+	<script src="https://kit.fontawesome.com/156d6a1fcd.js" crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="js/jquery/jquery.js"></script>
 	<!--        <script src="js/menu.js"></script>-->
