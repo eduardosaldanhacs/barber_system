@@ -14,3 +14,57 @@ Stack trace:
 #0 /home1/edu81877/public_html/barbearia_estilo/index.php(35): mysqli_query(Object(mysqli), 'SELECT * FROM b...')
 #1 {main}
   thrown in /home1/edu81877/public_html/barbearia_estilo/index.php on line 35
+[22-Apr-2025 14:13:39 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'edu81877_admin'@'50.116.87.164' (using password: YES) in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php:10
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php(10): mysqli->__construct('ftp.eduardosald...', 'edu81877_admin', Object(SensitiveParameterValue), 'edu81877_barbea...')
+#1 /home1/edu81877/public_html/barbearia_estilo/index.php(1): include('/home1/edu81877...')
+#2 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php on line 10
+[22-Apr-2025 21:53:30 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'edu81877_admin'@'50.116.87.164' (using password: YES) in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php:10
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php(10): mysqli->__construct('ftp.eduardosald...', 'edu81877_admin', Object(SensitiveParameterValue), 'edu81877_barbea...')
+#1 /home1/edu81877/public_html/barbearia_estilo/index.php(1): include('/home1/edu81877...')
+#2 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php on line 10
+[22-Apr-2025 21:53:31 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'edu81877_admin'@'50.116.87.164' (using password: YES) in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php:10
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php(10): mysqli->__construct('ftp.eduardosald...', 'edu81877_admin', Object(SensitiveParameterValue), 'edu81877_barbea...')
+#1 /home1/edu81877/public_html/barbearia_estilo/index.php(1): include('/home1/edu81877...')
+#2 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php on line 10
+[22-Apr-2025 21:53:35 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'edu81877_admin'@'50.116.87.164' (using password: YES) in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php:10
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php(10): mysqli->__construct('ftp.eduardosald...', 'edu81877_admin', Object(SensitiveParameterValue), 'edu81877_barbea...')
+#1 /home1/edu81877/public_html/barbearia_estilo/index.php(1): include('/home1/edu81877...')
+#2 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php on line 10
+[24-Apr-2025 09:13:02 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection timed out in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php:10
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php(10): mysqli->__construct('ftp.eduardosald...', 'edu81877_admin', Object(SensitiveParameterValue), 'edu81877_barbea...')
+#1 /home1/edu81877/public_html/barbearia_estilo/index.php(1): include('/home1/edu81877...')
+#2 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php on line 10
+[24-Apr-2025 12:03:45 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection timed out in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php:10
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php(10): mysqli->__construct('ftp.eduardosald...', 'edu81877_admin', Object(SensitiveParameterValue), 'edu81877_barbea...')
+#1 /home1/edu81877/public_html/barbearia_estilo/index.php(1): include('/home1/edu81877...')
+#2 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php on line 10
+[24-Apr-2025 15:23:26 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection timed out in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php:10
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php(10): mysqli->__construct('ftp.eduardosald...', 'edu81877_admin', Object(SensitiveParameterValue), 'edu81877_barbea...')
+#1 /home1/edu81877/public_html/barbearia_estilo/index.php(1): include('/home1/edu81877...')
+#2 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php on line 10
+[25-Apr-2025 08:33:41 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection timed out in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php:10
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php(10): mysqli->__construct('ftp.eduardosald...', 'edu81877_admin', Object(SensitiveParameterValue), 'edu81877_barbea...')
+#1 /home1/edu81877/public_html/barbearia_estilo/index.php(1): include('/home1/edu81877...')
+#2 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php on line 10
+[25-Apr-2025 08:37:48 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection timed out in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php:10
+Stack trace:
+#0 /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php(10): mysqli->__construct('ftp.eduardosald...', 'edu81877_admin', Object(SensitiveParameterValue), 'edu81877_barbea...')
+#1 /home1/edu81877/public_html/barbearia_estilo/index.php(1): include('/home1/edu81877...')
+#2 {main}
+  thrown in /home1/edu81877/public_html/barbearia_estilo/admin/includes/connect.php on line 10

@@ -38,10 +38,13 @@ $resultado = mysqli_query($conn, $query);
 				<div class="col-12 col-xl-2">
 					<strong>Serviço</strong>
 				</div>
-				<div class="col-12 col-xl-3">
+				<div class="col-12 col-xl-2">
+					<strong>Barbeiro</strong>
+				</div>
+				<div class="col-12 col-xl-2">
 					<strong>Data e Hora</strong>
 				</div>
-				<div class="col-12 col-xl-3 text-center">
+				<div class="col-12 col-xl-2 text-center">
 					<strong>Ações</strong>
 				</div>
 			</div>
@@ -59,11 +62,14 @@ $resultado = mysqli_query($conn, $query);
 						<div class="col-12 col-xl-2">
 							<?= $dados['service'] ?>
 						</div>
-						<div class="col-12 col-xl-3">
+						<div class="col-12 col-xl-2">
+							<?= $dados['barber'] ?>
+						</div>
+						<div class="col-12 col-xl-2">
 							<?= formatDateBr($dados['date']) ?> - 
 							<?= formatHour($dados['time']) ?>
 						</div>
-						<div class="col-12 col-xl-3 text-center d-flex align-items-center justify-content-center">
+						<div class="col-12 col-xl-2 text-center d-flex align-items-center justify-content-center">
 							<a href="panel.php?m=<?= $pasta ?>&a=novo.php&id=<?= $dados['id'] ?>" class="btn btn-info mr-1">Editar</a>
 							<a href="panel.php?m=<?= $pasta ?>&a=excluir.php&id=<?= $dados['id'] ?>" class="btn btn-danger">Excluir</a>
 						</div>

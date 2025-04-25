@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 $conn = new mysqli('localhost','root','','testeadm');
 
-//$conn = new mysqli('ftp.eduardosaldanha.online','edu81877_admin', '[4UGxn+J,GjN', 'edu81877_barbearia_estilo');
+//$conn = new mysqli('50.116.87.160','edu81877_admin', 'LqPKH]_bg5~h', 'edu81877_barbearia_estilo');
 
 ?>
 

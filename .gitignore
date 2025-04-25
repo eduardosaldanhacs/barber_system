@@ -2,7 +2,7 @@
 *.log
 # *.sql
 .error_log
-
+admin/includes/connect.php
 # Ignorar arquivos .htaccess "estranhos" (tipo aquele que você mostrou)
 
 

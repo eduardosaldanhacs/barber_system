@@ -34,6 +34,19 @@ if ($_GET['id']) {
 				<?php } ?>
 			</select>
 		</div>
+
+		<div class="col-12 form-group">
+			<label for="Barbeiros">Barbeiros</label>
+			<select name="barber" id="" class="form-control">
+				<option value="">Selecione o barbeiro</option>
+				<?php
+				$barber_query = "SELECT * FROM team WHERE state = 'S' AND deleted_at IS NULL";
+				$barber_result = mysqli_query($conn, $barber_query);
+				while ($barber = mysqli_fetch_assoc($barber_result)) { ?>
+					<option value="<?= $barber['name'] ?> <?= $barber['lastname'] ?>"><?= $barber['name'] ?> <?= $barber['lastname'] ?></option>
+				<?php } ?>
+			</select>
+		</div>
 		<div class="col-12 form-group">
 			<label>Telefone:</label>
 			<input type="text" name="phone" id="phone" class="form-control" value="<?= $dados['phone'] ?>" placeholder="" required>

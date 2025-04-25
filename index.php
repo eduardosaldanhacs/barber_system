@@ -88,7 +88,7 @@
     </section>
 
     <section id="agendamento" class="py-20 text-center bg-cover bg-center px-4">
-        <form action="<?= SITE ?>agendar.php" class="max-w-lg mx-auto bg-gray-800 p-4 md:p-8 rounded-2xl shadow-lg" method="post">
+        <form action="<?= SITE ?>agendar.php" class="max-w-lg mx-auto p-4 md:p-8 rounded-2xl shadow-lg" method="post" style="background-color: rgba(31, 41, 55, 90%)">
             <h2 class="text-3xl font-bold mb-10">Agende seu horário</h2>
             <input type="text" name="name" placeholder="Seu nome" class="w-full p-3 mb-4 rounded bg-gray-700 text-white focus:outline-none">
             <input type="tel" name="phone" placeholder="Telefone" class="w-full p-3 mb-4 rounded bg-gray-700 text-white focus:outline-none" id="phone">
@@ -97,6 +97,16 @@
                 <option>Selecione o serviço</option>
                 <?php foreach ($service_option as $option) { ?>
                     <option value="<?= $option ?>"><?= $option ?></option>
+                <?php } ?>
+            </select>
+
+            <select name="barber" id="" class="w-full p-3 mb-4 rounded bg-gray-700 text-white focus:outline-none">
+                <option value="">Selecione o barbeiro</option>
+                <?php
+                $barber_query = "SELECT * FROM team WHERE state = 'S' AND deleted_at IS NULL";
+                $barber_result = mysqli_query($conn, $barber_query);
+                while ($barber = mysqli_fetch_assoc($barber_result)) { ?>
+                    <option value="<?= $barber['id'] ?>"><?= $barber['name'] ?> <?= $barber['lastname'] ?></option>
                 <?php } ?>
             </select>
 
